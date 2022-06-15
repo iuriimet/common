@@ -19,17 +19,7 @@
 #include "tizen.h"
 #include "private/tizen_error_private.h"
 
-__attribute__((optnone))
-int buffer_underflow()
-{
-    int idx = -1;
-    char buffer[42];
-    buffer[idx] = 42;
-    return 0;
-}
-
 void set_last_result(int err)
 {
-    buffer_underflow();
     tizen_last_error = err;
 }
